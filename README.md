@@ -14,40 +14,40 @@ Data yang dimasukkan hanya disimpan selama program berjalan, sehingga tidak akan
 Program ini cocok untuk latihan sederhana dalam pengelolaan data menggunakan Python.
 
 # Codingan
-         mahasiswa = []  # Daftar untuk menyimpan data mahasiswa
+          mahasiswa = []  # Daftar untuk menyimpan data mahasiswa
 
-  def tambah(nama, nilai):
-      """Menambahkan data mahasiswa ke dalam daftar."""
-      mahasiswa.append({"nama": nama, "nilai": nilai})
-      print(f"Data {nama} berhasil ditambahkan.")
+          def tambah(nama, nilai):
+          """Menambahkan data mahasiswa ke dalam daftar."""
+          mahasiswa.append({"nama": nama, "nilai": nilai})
+          print(f"Data {nama} berhasil ditambahkan.")
 
-  def tampilkan():
-     """Menampilkan semua data mahasiswa."""
-      if not mahasiswa:
+          def tampilkan():
+          """Menampilkan semua data mahasiswa."""
+          if not mahasiswa:
           print("Tidak ada data mahasiswa.")
           return
-      print("Daftar Nilai Mahasiswa:")
-      for index, mhs in enumerate(mahasiswa, start=1):
-        print(f"{index}. Nama: {mhs['nama']}, Nilai: {mhs['nilai']}")
+          print("Daftar Nilai Mahasiswa:")
+          for index, mhs in enumerate(mahasiswa, start=1):
+          print(f"{index}. Nama: {mhs['nama']}, Nilai: {mhs['nilai']}")
 
-  def hapus(nama):
-      """Menghapus data mahasiswa berdasarkan nama."""
-      global mahasiswa
-      mahasiswa = [mhs for mhs in mahasiswa if mhs["nama"] != nama]
-      print(f"Data {nama} berhasil dihapus.")
+          def hapus(nama):
+          """Menghapus data mahasiswa berdasarkan nama."""
+          global mahasiswa
+          mahasiswa = [mhs for mhs in mahasiswa if mhs["nama"] != nama]
+          print(f"Data {nama} berhasil dihapus.")
 
-  def ubah(nama, nilai_baru):
-      """Mengubah data mahasiswa berdasarkan nama."""
-      for mhs in mahasiswa:
+          def ubah(nama, nilai_baru):
+          """Mengubah data mahasiswa berdasarkan nama."""
+          for mhs in mahasiswa:
           if mhs["nama"] == nama:
-              mhs["nilai"] = nilai_baru
-              print(f"Data {nama} berhasil diubah menjadi nilai {nilai_baru}.")
-              return
-      print(f"Data {nama} tidak ditemukan.")
+          mhs["nilai"] = nilai_baru
+          print(f"Data {nama} berhasil diubah menjadi nilai {nilai_baru}.")
+          return
+          print(f"Data {nama} tidak ditemukan.")
 
-  def menu():
-      """Menampilkan menu utama."""
-      while True:
+          def menu():
+          """Menampilkan menu utama."""
+          while True:
           print("\nMenu:")
           print("1. Tambah Data")
           print("2. Tampilkan Data")
