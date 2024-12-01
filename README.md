@@ -141,3 +141,5 @@ Bagian ini memastikan bahwa fungsi menu() hanya akan dijalankan jika skrip ini d
 # Run codingan 
 ![image](https://github.com/user-attachments/assets/2a5110f9-9292-4bf7-87ec-9e6cb6112fd7)
 ![image](https://github.com/user-attachments/assets/48c25fbb-ae9f-4a65-9697-1d03d955b5d8)
+![image](https://github.com/user-attachments/assets/d2d52a5b-0547-47af-b9f7-de32f089b3ea)
+
