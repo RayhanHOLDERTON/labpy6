@@ -75,5 +75,7 @@ Program ini cocok untuk latihan sederhana dalam pengelolaan data menggunakan Pyt
           else:
               print("Pilihan tidak valid. Silakan coba lagi.")
 
-    if __name__ == "__main__":
-       menu()
+      if __name__ == "__main__":
+         menu()
+# Flowchart
+
